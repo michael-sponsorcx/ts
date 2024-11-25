@@ -1,0 +1,44 @@
+guid: d9aadc02-6d3a-442d-9eca-9dd76736e1b1
+table:
+  name: DIM_PROPERTIES
+  db: ANALYTICS
+  schema: PROD_DBT
+  db_table: DIM_PROPERTIES
+  connection:
+    name: Snowflake_Prod_ANALYTICS_PROD_dbt
+    fqn: 08df662f-4482-4a51-9104-1fd971b21d95
+  columns:
+  - name: ID
+    db_column_name: ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
+  - name: ARCHIVED
+    db_column_name: ARCHIVED
+    properties:
+      column_type: ATTRIBUTE
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: BOOL
+  - name: NAME
+    db_column_name: NAME
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: DIVISION
+    db_column_name: DIVISION
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: BUSINESS_UNIT
+    db_column_name: BUSINESS_UNIT
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
