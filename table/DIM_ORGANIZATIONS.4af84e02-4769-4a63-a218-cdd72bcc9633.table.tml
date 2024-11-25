@@ -1,0 +1,25 @@
+guid: 4af84e02-4769-4a63-a218-cdd72bcc9633
+table:
+  name: DIM_ORGANIZATIONS
+  db: ANALYTICS
+  schema: PROD_DBT
+  db_table: DIM_ORGANIZATIONS
+  connection:
+    name: Snowflake_Prod_ANALYTICS_PROD_dbt
+    fqn: 08df662f-4482-4a51-9104-1fd971b21d95
+  columns:
+  - name: NAME
+    db_column_name: NAME
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: VARCHAR
+  - name: ID
+    db_column_name: ID
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+      value_casing: UNKNOWN
+    db_column_properties:
+      data_type: INT64
